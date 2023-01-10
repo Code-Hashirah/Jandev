@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="text-bg-white container-fluid">
+         <h1 class="h1 text-bg-primary p-3 align-content-center text-decoration-underline" style="text-align:center ;" id="topic"></h1>
+         <p class="h4 text p-3 " id ="learnt"></p>
+         <p id="Programming"></p>
+         <p id="Variables"></p>
+         <p id="Data_types"></p>
+         <p id="Operators"></p>
+         <p class="h2 text-bg-primary" id="defOperators" style="text-align: center;"></p>
+         <p id="arithmeticOperators" class=" h2 text-bg-primary"></p>
+         <ul>
+            <li id="addition"></li>
+            <li id="subtract"></li>
+            <li id="multi"></li>
+            <li id="div"></li>
+            <li id="exponential"></li>
+            <li id="modulo"></li>
+            <li id="increament"></li>
+            <li id="decreament"></li>
+         </ul>
+         <p class="h4"></p>
+         <p id="a"></p>
+         <p id="b"></p>
+         <p id="c"></p>
+         <p id="add"></p>
+         <p id="sub"></p>
+         <p id="mul"></p>
+         <p id="divide"></p>
+         <p id="expo"></p>
+         <p id="modulo"></p>
+         </div>
+    </div>
+   
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('topic').innerHTML="Day 2 of Javascript Class";
+        document.getElementById('learnt').innerHTML="Today I learnt about types programming language Data types, Operators and Variables";
+        document.getElementById('Programming').innerHTML="Programming: This is the art of instructing a computer to perform a specific task and telling it how to perform it using a programming language";
+        document.getElementById('Variables').innerHTML="Variables: A variable is a reserved place holder or memory space for data in a program";
+        document.getElementById('Data_types').innerHTML="Data types are the various types of input or data recognized by a programming language, e.g integer, arrays, string, object etc";
+        document.getElementById('Operators').innerHTML="Operators: these are used in between two operands, we have assignment operators, arithmetic operators, logical operators, boolean operators, comparison operators e.t.c";
+        document.getElementById('defOperators').innerHTML="Operators";
+        document.getElementById('arithmeticOperators').innerHTML="Arthmetic Operators";
+        document.getElementById('addition').innerHTML="addition: +";
+        document.getElementById('subtract').innerHTML="Subtraction: -";
+        document.getElementById('multi').innerHTML="Multiplication: *";
+        document.getElementById('div').innerHTML="Division: /";
+        document.getElementById('exponential').innerHTML="Exponential: **";
+        document.getElementById('modulo').innerHTML="Modulo: %";
+        document.getElementById('increament').innerHTML="Increament: ++";
+        document.getElementById('decreament').innerHTML="Multiplication: --";
+        document.getElementById('a').innerHTML="a=6";
+        document.getElementById('b').innerHTML="b=13";
+        let a=6;
+        let b=13;
+        document.getElementById('add').innerHTML=" Addition : a+b = "+(a+b);
+        document.getElementById('sub').innerHTML=" Subtraction : a-b = "+(a-b);
+        document.getElementById('mul').innerHTML=" Multiplication : a*b = "+(a*b);
+        document.getElementById('divide').innerHTML=" Division : a/b = "+(a/b);
+        document.getElementById('modulo').innerHTML=" Modulo : a+b = "+(a%b);
+        document.getElementById('expo').innerHTML="Exponential of a and b = "+(a**b);
+        //   window.alert("Hello Welcome");
+    </script>
+</body>
+</html>

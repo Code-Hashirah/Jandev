@@ -7,12 +7,15 @@
     <title>Variables</title>
 </head>
 <body>
-    <button id="btn">Click Here...</button>
+    <button id="btn" type="button">Click Here...</button>
     <script>
         let a;
-        let name="Sunday Omolewu"
+        // let name="Sunday Omolewu";
+        let firstName="Kabir";
         a=546;
         console.log(a);
+        document.getElementById('btn').onclick=window.alert('Hello' +firstName);
+        document.getElementById('btn').onclick=console.log('Hello' +firstName);
     </script>
 </body>
 </html>
