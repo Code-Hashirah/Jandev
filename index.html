@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Javascript</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <script>
+        alert('About Kabir')
+    </script> -->
+</head>
+<body>
+    <button type="button" onclick="window.alert('Done')" class="btn btn-outline-primary">Click me...</button>
+    <!-- <button type="button" onclick="this.innerHTML='Clicked'">Click me...</button> -->
+    <div class="container text-bg-light">
+         <h1 id="class" style="padding: 5px;text-align: center;"></h1>
+    <p id="about" style="font-family: tahoma; margin: 5px; text-align: justify;"></p>
+    </div>
+   
+    <!--Advisable method ======================================================================================================================== -->
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+        // never use this in production
+        
+      //  document.write('OIC HUB document.write');
+        // document.writeln(234)
+        // document.write(234)
+       // window.alert("Alert"+364+463);
+        console.log('this is a console .log text');
+        document.getElementById('class').innerHTML="Introducing Kabir";
+        document.getElementById('about').innerHTML="Kabir s a Nigerian Muslim male, a web developer ,a programmer and tutor." 
+        +"He is commited to following the best practices in programming and keeps in mind the interet of stackholders in p"
+        +"His is a fan of medieval history and loves to make historical content. Kabir has a strong foundation in computer" 
+        +"science and a keen ability to create and maintain high-quality software. He is proficient in a variety of programming"
+        + "languages and technologies, and is able to adapt his skillset to meet the needs of his clients. His strong problem-solving"
+        +"skills enable him to tackle complex challenges and deliver efficient and effective solutions. He is also highly dedicated to "
+        +"continuous learning, staying up-to-date with the latest developments in his field. In his work, he prioritizes"
+        +"delivering excellent results and meeting the specifications of his clients.";
+    </script>
+</body>
+</html>
