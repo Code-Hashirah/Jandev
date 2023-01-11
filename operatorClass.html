@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="text-bg-white container-fluid">
+        <h1 class="h1 text-bg-primary p-3 align-content-center text-decoration-underline" style="text-align:center ;" id="topic"></h1>
+        <p class="h4 text p-3 " id ="learnt"></p>
+        <p id="Operators"></p>
+        <p id="assignmentOp"></p>
+        <p id="Data_types"></p>
+        <p id="Operators"></p>
+        <p class="h2 text-bg-primary" id="defOperators" style="text-align: center;"></p>
+        <p id="assignmentOperators" class=" h2 text-bg-primary"></p>
+        <ul style="list-style-type:none;">
+           <li id="addition"></li>
+           <li id="subtract"></li>
+           <li id="multi"></li>
+           <li id="div"></li>
+           <li id="exponential"></li>
+           <li id="modulo"></li>
+           <!-- <li id="increament"></li> -->
+           <li id="equality"></li>
+        </ul>
+        <p id="comparison"></p>
+        <ul style="list-style-type:none;">
+            <li id="equalTo"></li>
+            <li id="NotEqualTo"></li>
+            <li id="equalValType"></li>
+            <!-- <li id="Notequal "></li> -->
+            <li id="NotequalValType"></li>
+            <li id="greaterThan"></li>
+            <li id="lessThan"></li>
+            <li id="greatetThanEqualTo"></li>
+            <li id="lessThanEqualTo"></li>
+        </ul>
+        <p id="logic"></p>
+        <p id="Logic1"></p>
+        <p id="Logic2"></p>
+        <p id="Logic3"></p>
+        <p id="stringCon"></p>
+     
+   </div>
+    <script>
+          document.getElementById('topic').innerHTML="Day 3 of Javascript Class";
+        document.getElementById('learnt').innerHTML="Today I learnt about assignment operators, Comparison operartors (Logical operators) and String concartenation";
+        document.getElementById('Operators').innerHTML="Assignment Operators";
+        document.getElementById('assignmentOp').innerHTML="Assignment Operartors: These are operators used to assign value to variables they are as follows";
+        document.getElementById('assignmentOperators').innerHTML="List of Assignment Operators";
+        document.getElementById('addition').innerHTML="+=";
+        document.getElementById('subtract').innerHTML="-=";
+        document.getElementById('multi').innerHTML="*=";
+        document.getElementById('div').innerHTML="/=";
+        document.getElementById('exponential').innerHTML="**=";
+        document.getElementById('modulo').innerHTML=" %=";
+        document.getElementById('equality').innerHTML=" =";
+        document.getElementById('comparison').innerHTML="Comparison(Logical) Operators: These operators are used to compare data and make decisions based on the boolean value of the data";
+        document.getElementById('stringCon').innerHTML="String concartenation: this is used in joining two or more strings together using the + sign.";
+        
+        document.getElementById('comparison').innerHTML="Comparison Operators: They are used to compare values";
+        document.getElementById('equalTo').innerHTML="==";
+        document.getElementById('NotEqualTo').innerHTML="!=";
+        document.getElementById('equalValType').innerHTML=" ===";
+        document.getElementById('NotequalValType').innerHTML=" !==";
+        document.getElementById('greaterThan').innerHTML=">";
+        document.getElementById('lessThan').innerHTML="<";
+        document.getElementById('greatetThanEqualTo').innerHTML=" >=";
+        document.getElementById('lessThanEqualTo').innerHTML=" <=";
+        document.getElementById('logic').innerHTML="Logical Operators"
+        document.getElementById('Logic1').innerHTML="AND ===> &&";
+        document.getElementById('Logic2').innerHTML="OR ===> ||";
+        document.getElementById('Logic3').innerHTML="NOT ===> !";    
+        console.log("Assignment Operators");
+        console.log("a=15");
+        let a= 15;
+        console.log(a+=10);
+         a= 15;
+        console.log(a*=10);
+         a= 15;
+        console.log(a-=10);
+         a= 15;
+        console.log(a/=10);
+         a= 15;
+        console.log(a%=10);
+         a= 15;
+        console.log(a**=10);
+        console.log(2<10);
+        console.log("Comparison Operators");
+        let x= 5;
+        let y=15;
+        console.log(x>y);
+        console.log(x<y);
+        console.log(x>=y);
+        console.log(x<=y);
+        console.log(x==y);
+        console.log(y===10);
+        console.log(x!==10);
+        console.log(y!=10);
+        console.log("Logical");
+        console.log(x===10)&&(x==y);
+        console.log(x===10)||(x==y);
+        console.log("String Concartenation");
+        let fName= "Kabir";
+       let lName= "Ajibade";
+       let fullName=fName+" "+lName;
+       console.log(fName);
+       console.log(lName);
+       console.log(fullName);
+    </script>
+     <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
