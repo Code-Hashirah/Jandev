@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <p id="answer" style="border: 2px solid; width: 20px;"></p>
+    <p id="answer1" style="border: 2px solid; width: 20px;"></p>
+    <p id="answer2" style="border: 2px solid; width: 20px;"></p>
+    <p id="answer3" style="border: 2px solid; width: 20px;"></p>
+    <p id="answer4" style="border: 2px solid; width: 20px;"></p>
+    <p id="answer5" style="border: 2px solid; width: 20px;"></p>
+    <!-- =================================================================================================== -->
+    <script>
+        
+        function add(a,b){
+            document.getElementById('answer').innerHTML=a+b;
+        }
+
+        function sub(a,b){
+            document.getElementById('answer1').innerHTML=a-b;
+        }
+
+        function mul(a,b){
+            document.getElementById('answer2').innerHTML=a*b;
+        }
+
+        function divid(a,b){
+            document.getElementById('answer3').innerHTML=a/b;
+        }
+        function exp(a,b){
+            document.getElementById('answer4').innerHTML=a**b;
+        }
+        function mod(a,b){
+            document.getElementById('answer5').innerHTML=a%b;
+        }
+        add(3,5);
+        sub(3,5);
+        mul(3,5);
+        divid(3,5);
+        exp(3,5);
+        mod(3,5);
+    </script>
+</body>
+</html>

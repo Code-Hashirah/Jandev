@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-    <p id="comment"></p>
+    <label for="score">Enter score</label>
+    <input  type="text" id="score" class="text-bg-light" oninput="grade()">
+   <label for="comment">Grade</label>
+    <p id ="comment"></p>
 <!-- ==============================================Javascript============================================= -->
+<script src="bootstrap.bundle.min.js"></script>
     <script>
-        let score=30;
-        if (score>=70 && score <=100){
+    //   score.value;
+        function grade(){
+            let score=document.getElementById('score').value;
+            if (score>=70 && score <=100){
             document.getElementById('comment').innerHTML="A";
         }
         else if(score>=60 && score<=69){
@@ -32,6 +39,8 @@
         else{
             document.getElementById('comment').innerHTML="F";
         }
+        }
+       
         // else if(score>=50 && score>)
 
     </script>
