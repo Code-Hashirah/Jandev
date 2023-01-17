@@ -7,11 +7,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
-<body>
+<body class="container-fluid d-flex">
+    <div class="border w-25 bg-opacity-50">
+        <p class="h2">Grading system</p>
+    <ul style="list-style-type:none">
+        <li>70 to 100=>A</li>
+        <li>60 to 69=>B</li>
+        <li>50 to 59=>C</li>
+        <li>45 to 45=>D</li>
+        <li>40 to 44=>E</li>
+        <li>Less than 30=>F</li>
+    </ul>
     <label for="score">Enter score</label>
-    <input  type="text" id="score" class="text-bg-light" oninput="grade()">
+    <input  type="text" id="score" class="text-bg-light border-dark" oninput="grade()">
    <label for="comment">Grade</label>
     <p id ="comment"></p>
+    </div>
+    
 <!-- ==============================================Javascript============================================= -->
 <script src="bootstrap.bundle.min.js"></script>
     <script>
