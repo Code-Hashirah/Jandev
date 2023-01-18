@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <!-- ================================================================================================================ -->
+    <script>
+        let welcome =
+        " Anew it is it is a very long long way to \"ba sing se\" and the";
+        let like =  "I love OIC HUB coding school";
+        let name="ajibade kabir adebisi";
+       let newname =name.toUpperCase();
+         newname =name.replace('a','A')
+         newname1 =newname.replace('k','K')
+        const Jointname = newname1.slice(0, 14) 
+        // let newnameAll=newname1.indexOf(14).toUpperCase();
+        const newnameAll=name.slice(14, 21);
+        const newnameA=newnameAll.replace('a','A');
+
+
+        console.log(newname1);
+        console.log(newnameA);
+        console.log(Jointname);
+        console.log(Jointname + newnameA);
+
+        // let full=newname1.replace(name.charAt(14), 'A');
+        // // let full=newname1.replace('adebisi','Adebisi');
+        // console.log(full);
+    </script>
+</body>
+</html>
