@@ -21,19 +21,22 @@
         console.log(num);
         if(num <= 0.3){
             link.href="https://wa.me/2349053109638";
-            // document.getElementById('link').innerHTML="https://wa.me/2349053109638"
+            document.getElementById('link').innerHTML="Whatsapp";
+           
         }
         else if( num > 0.3 && num <= 0.5){
             link.href="https://twitter.com/code-hashira";
+            document.getElementById('link').innerHTML="Twitter";
            
         }
         else if( num>0.5 && num<=0.7){
             link.href="https://www.linkedin.com/in/kabir-ajibade-061ba5150/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BL6lLyZCwRtCAXILnHxJX4A%3D%3D";
-           
+            document.getElementById('link').innerHTML="LinkedIn";
         }
         else{
             link.href="https://youtube.com/@ajeeholyman9195";
-            // console.log(num);
+            document.getElementById('link').innerHTML="Youtube"
+            console.log(num);
         }
     }
     
