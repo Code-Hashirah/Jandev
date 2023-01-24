@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let name=['Hauwa', 'Bintu', 'Wakil',23,true];
+        console.log(name);
+        console.log(name[1]); 
+        name[1]="Ali";
+        console.log(name);
+        console.log(name.length);
+        name.pop();
+        console.log(name);
+        name.shift();
+        console.log(name);
+        name.push('Kabir', 'Imram' ,'Khan')
+        console.log(name);
+        name.unshift({name:'Binta', Age:12});
+        console.log(name);
+        const staff=['Alo','Ade','Ado','Mala','Ali']
+        const books=['Castle', 'of','Otranto']
+        staff.splice(4,1,'Buni')
+        console.log(staff);
+        console.log(staff.slice(3,5));
+        allArray=name.concat(staff,books);
+        console.log(allArray);
+// ================exercise===================
+        const figure=[65,74,85,86,96,64,63,85,23,34,46,90,38,36,37]
+        // ========================  function==============
+        figure.sort(sum=(a,b)=> a-b);
+        console.log(figure);
+        figure.sort(sum=(a,b)=>b-a);
+        console.log(figure);
+
+        // ==============================call back  ============================
+        const ascSorted=(a,b)=>b-a;
+        figure.sort(ascSorted);
+        console.log(figure);
+
+        const desSorted=(a,b)=>b-a;
+        figure.sort(desSorted);
+        console.log(figure);
+
+        // ==========  function======================
+      figure.sort(function(a,b){
+            return a-b;
+            })
+            console.log(figure);
+        figure.sort(function(a,b){
+            return b-a;
+        })
+        console.log(figure);
+
+
+    </script>
+</body>
+</html>
