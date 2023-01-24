@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Loops</title>
 </head>
 <body>
+
+    <!-- ==================================================script============================= -->
+    <script>
+        //for loop
+        // syntax : 
+        // for(initial; condition; increament/decreament){
+              //code
+        // }
+            // for(let i=1; i<=10; i++){
+            //     console.log(i+"  How are you")
+            // }
+              let  text="";
+            for(let j=1; j<=10; j++){
+                text+=j +"How are all of you";
+                console.log(j+"  How are you")
+            }
+      console.log("Numbers 1 to 100")
+      for(k=1; k<=100; k++){
+        if(k%2==0){
+            console.log(k +" -is an even number")
+        }
+        else{
+            console.log(k +" -is an odd number")
+        }
+        // console.log(k)
+      }
+
+      const nums=[11,12,13,14,15,16,17,18,19,11,33,44,66];
+      let  newNums="";
+      const newArray=[];
+      for(let i=0; i<nums.length; i++){
+            newNums+=nums[i]+"\n"
+            newArray[i]=nums[i]/2
+            // console.log(newNums+"\n")
+      }
+      console.log(newNums)
+      console.log(newArray)
+      let names=['Kabir','Rahman','Iyanu','Olaitan']
+      const newNames=[];    
+      a=0;
+      for(let i=0; i<names.length; i++){
+        names[a].toLocaleUpperCase();
+        if(names[i])
+      }
+    </script>
     
 </body>
 </html>
