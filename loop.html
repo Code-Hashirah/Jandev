@@ -46,12 +46,31 @@
       console.log(newArray)
       let names=['Kabir','Rahman','Iyanu','Olaitan']
       const newNames=[];    
-      a=0;
-      for(let i=0; i<names.length; i++){
-        names[a].toLocaleUpperCase();
-        if(names[i])
+    //   a=0;
+    //   for(let i=0; i<names.length; i++){
+    //     // names[a].toLocaleUpperCase();
+    //     if(i%2==0){
+    //         newNames[i]=names[i].toUpperCase()
+    //     }
+    //     else{
+    //         newNames[i]=names[i].toLowerCase()
+    //     }
+    //   }
+    //   console.log(newNames);
+    //   ====================================================
+// console.log("Unknow ====")
+    for(let k=0; k<names.length; k++){
+        // names[a].toLocaleUpperCase();
+        if(names[k]=="Kabir" || names[k]=="Iyanu"){
+            newNames[k]=names[k].toUpperCase()
+        }
+        else{
+            newNames[k]=names[k].toLowerCase()
+        }
       }
+      console.log(newNames);
     </script>
+    
     
 </body>
 </html>
