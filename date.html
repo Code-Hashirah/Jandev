@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =============================scripts========================================== -->
+    <script>
+        let currentDate=new Date();
+        let dday = new Date('1990, mar 10')
+        console.log(dday.toString());
+        console.log(dday.toDateString());
+        console.log(dday.toTimeString());
+        console.log(dday.toISOString());
+        console.log(dday.toLocaleString());
+        console.log(dday.toLocaleTimeString());
+    
+        let months=currentDate.getMonth()
+        const Month=['jan','feb','mar','apr','may','jun']
+        console.log((Month[months]))
+
+        let Days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+        let day=currentDate.getDay();
+        console.log(Days[day]);
+
+        let dDate=new Date('2009, Jun 20')
+        let Ndate=new Date('2024, 09,15');
+        if(dDate<Ndate){
+            console.log("Past event")
+        }
+        else{
+            console.log("Upcoming event")
+        }
+
+    </script>
+</body>
+</html>

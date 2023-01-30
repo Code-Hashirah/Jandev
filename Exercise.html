@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+      }
+      #form-validation{
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        flex-direction: column;
+        align-self: center;
+        background-image: linear-gradient(rgb(16, 29, 50), rgb(8, 22, 30), black);
+      }
+      #form-validation > div{
+        width: 90%;
+        align-self: center;
+      }
+      label{
+        color:white;
+      }
+      h1{
+        color: white;
+        text-align: center;
+      }
+      input:hover{
+        box-shadow: 5px 5px 5px rgb(39, 31, 99);
+      }
+      #user{
+        color: white;
+        font-weight: 500;
+      }
+      button:hover{
+        background-image: linear-gradient(rgb(32, 4, 80),blue, rgb(32, 4, 80));
+      }
+      h1:hover{
+        text-shadow: 5px 5px 5px rgb(32, 4, 80);
+      }
+
+    </style>
+</head>
+<body>
+    
+    <form action="get"  id="form-validation" class="mx-5" >
+        <h1>Form Validation</h1>
+        <div id="user">
+          
+        </div>
+        <div class="my-2">
+            <label for="name">Name:</label>
+              <input type="text"  id="name" class="form-control w-100" placeholder="Name" name="name" oninput="validName()">
+            <p id="name-status"></p>
+            </div>
+
+        <div class="my-2">
+            <label for="phoneNo">Phone Number</label>
+              <input type="text"  id="phoneNo" class="form-control w-100" placeholder="Phone: 080x xxx xxxx" name="phoneNo" maxlength="11" oninput="validPhone()" required>
+              <p id="phone-status"></p>
+         </div>
+
+        <div class="my-2">
+            <label for="E-mail">E-mail:</label>
+              <input type="text"  id="E-mail" class="form-control w-100" placeholder="E-mail" name="E-mail" oninput="validEmail()" required>
+              <p id="email-status"></p>
+        </div>
+       
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" class="form-control w-100" id="password" placeholder="Enter password" name="password" oninput="validPassword()" required>
+          <p id="password-status"></p>
+        </div>
+
+        <div class="mb-3">
+            <label for="ConfirmPassword" class="form-label">Confirm Password:</label>
+            <input type="password" class="form-control w-100" id="ConfirmPassword" placeholder="Confirm password" name="Confirmpassword" oninput="confirmPassword()" required>
+            <p id="ConfirmPassword-status"></p>
+          </div>
+       <div>
+         <button type="submit" class="btn btn-outline-primary w-25">Submit</button>
+       </div>
+       
+      </form>
+
+
+
+
+      <!-- =============scripts================= -->
+      <script>
+          function validName(){
+          let name=document.getElementById('name').value; 
+              if(name.includes('*')==true||name.includes('(')==true||name.includes('-') ==true
+              ||name.includes('_')==true||name.includes('=')==true||name.includes('/')==true||name.includes('>')==true
+              ||name.includes('<')==true||name.includes('¬')==true || name.includes('!')==true || name.includes('£')==true 
+              || name.includes('$')==true ||name.includes('1')==true||name.includes('2')==true
+              ||name.includes('3')==true||name.includes('4')==true|| name.includes('%')==true || name.includes('^')==true 
+              || name.includes('&')==true||name.includes('5')==true||name.includes('6')==true||name.includes('7')==true
+              ||name.includes('8')==true||name.includes('9')==true||name.includes('0')==true||name.includes('+')==true){
+                console.log("Invalid input")
+                document.getElementById('name-status').style.color="red"
+                document.getElementById('name-status').innerHTML="Invalid";
+              }
+              
+              // }
+              else {
+                console.log("Validated!");
+                document.getElementById('name-status').style.color="green"
+                document.getElementById('name-status').innerHTML="Valid"
+              }      
+            }
+
+            function validPhone(){
+        let phone =document.getElementById('phoneNo').value;
+        if(phone.startsWith('080')||phone.startsWith('070')||phone.startsWith('090')||phone.startsWith('071')
+        ||phone.startsWith('081')||phone.startsWith('091')
+        ||phone.startsWith('+234')&& Number.isInt(phone)==true){
+         console.log("Validated");
+         document.getElementById('phone-status').style.color="green"
+         document.getElementById('phone-status').innerHTML="Valid";
+        }
+        else {
+          document.getElementById('phone-status').style.color="red"
+          document.getElementById('phone-status').innerHTML="Invalid";
+         console.log("Wrong input");
+        }
+      }
+       function validEmail(){
+        let email =document.getElementById('E-mail').value;
+        if(email.includes('@')==true&&email.endsWith('.com')==true){
+          document.getElementById('email-status').style.color="green"
+          document.getElementById('email-status').innerHTML="Valid"
+        }
+        else{
+          document.getElementById('email-status').style.color="red"
+          document.getElementById('email-status').innerHTML="Invalid"
+        }
+       }
+
+       function validPassword(){
+        let password =document.getElementById('password').value;
+        if(password.lenght==0){
+          document.getElementById('password-status').style.color="red"
+          document.getElementById('password-status').innerHTML="Invalid"
+        }
+        else{
+          document.getElementById('password-status').style.color="green"
+          document.getElementById('password-status').innerHTML="Valid"
+        }
+      }
+      function confirmPassword(){
+        let password =document.getElementById('password').value;
+        let ConfirmPassword =document.getElementById('ConfirmPassword').value;
+        if(password===ConfirmPassword){
+          document.getElementById('ConfirmPassword-status').style.color="green"
+          document.getElementById('ConfirmPassword-status').innerHTML="Valid";
+        }
+        else{
+          document.getElementById('ConfirmPassword-status').style.color="red"
+          document.getElementById('ConfirmPassword-status').innerHTML="Not match";
+        }
+
+      }
+     
+      let regForm=document.forms[0];
+      regForm.addEventListener('submit', (e)=>{
+        e.preventDefault(); 
+      let name = regForm['name'].value;
+      let email = regForm['E-mail'].value;
+      let phone = regForm['phoneNo'].value;
+      let password = regForm['password'].value;
+     
+      if(name.lenght=" "){
+        document.getElementById('user').innerHTML="Name cannot be blank"
+        document.getElementById('name').style.color="red";
+        console.log(newName)
+      }
+      else{
+      document.getElementById('user').innerHTML=`Welcome to our office ${name}. 
+      Check your details below;<p>
+        mail: ${email} <br>
+        phone: ${phone} <br/>
+        password: ${password} <br>
+        </p>`;
+      }
+    })
+      </script>
+      <script src="bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

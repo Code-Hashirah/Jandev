@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <!-- <p id="record">
+
+    </p> -->
+    <ul id="lscore"></ul>
+
+    <!-- ====================sscripts=============================== -->
+    <script>
+        const user={name:'kabir', age:32,active:true}
+        console.log(user.active);
+        console.log(user['name']);
+        user.name="Imran"
+        console.log(user.name);
+        console.log(user);
+        const User=[{name:"Abdullahi", age:70,Status:'Online',identification:['male',40]},
+        {name:"AbdulKarim", age:60,Status:'Offline',identification:['male',70]}
+        ]
+        console.log(User[0].identification[0]);
+
+        //for of loop 
+        let ages=[23,5,78,100,67,89,34];
+        for(let i of ages){
+            console.log(i);
+        }
+
+        //for in loop
+        for(let a in User){
+            console.log(a);
+            console.log(User[a]);
+        }
+
+        // ===========================Exercise=================================
+        console.log("Exercise below")
+        const score=[45,65,35,65,34,76,45,55,44,76,67,54];
+        let fate=[];
+        let i=0;
+        for(let k of score){
+            if(k-5>=50){
+                fate[i]=k+=" is Pardoned"
+                
+            }
+            else if(k-3>=50){
+                fate[i]=k+=" is Escaped"
+                
+            }
+            else{
+                fate[i]=k+=" is Punished"
+              
+            }
+            i++
+        // console.log(fate)
+        }
+        console.log(fate)
+       let list = document.getElementById('lscore')
+       fate.forEach((item)=>{
+        let li = document.createElement('li')                                                                                                                                                                                                                                                                                     
+        li.innerHTML=item
+        list.appendChild(li)
+       })
+       
+       
+     
+    </script>
+</body>
+</html>

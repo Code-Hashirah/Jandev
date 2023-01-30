@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+     
+    <!-- =====================scripts======================== -->
+    <script>
+        let numero=[34,54 ,5,6,6,67,55,554,65]
+        // index of
+        // numero.findIndex(56);
+        let ind=numero.find((numero)=>{
+            return numero>50
+        })
+        console.log(ind)
+        console.log(numero)
+        // every()
+
+
+
+
+        //some()
+        const Users=[{name:"Abdullahi", age:70,Status:'Online',identification:['male',40]},
+        {name:"AbdulKarim", age:60,Status:'Offline',identification:['male',70]}
+        ]
+        console.log(Users[1].name)
+        for (let user of Users ){
+            console.log(user.name, user.Status)
+        }
+        // console.log(Users.name)
+        let output=numero.some((age)=> numero>50)
+
+        //find
+
+
+        //entries
+        const age=[45,2,4,65,87,34,74,8]
+        // output = age.entries((age)=> age>20)
+        output=age.entries();
+
+        for (let x of output){
+            // console.log(age.entries(age ))
+             console.log(x+"\n");
+            // ages++
+        }
+        // keys
+        ans=age.keys();
+
+        for (let y of ans){
+            // console.log(age.entries(age ))
+            console.log(y+"\n");
+            // ages++
+        }
+
+        //from
+        let char = 'Kabir'
+        splt=Array.from(char)
+        console.log(splt);
+
+        //map
+        const newar=age.map(function(value, index, arry){
+            return value/2;
+        })
+        console.log(newar)
+
+       
+    
+    </script>
+</body>
+</html>
