@@ -62,20 +62,20 @@
 
         <div class="my-2">
             <label for="phoneNo">Phone Number</label>
-              <input type="text"  id="phoneNo" class="form-control w-100" placeholder="Phone: 080x xxx xxxx" name="phoneNo" maxlength="11" oninput="validPhone()" required>
+              <input type="text"  id="phoneNo" class="form-control w-100" placeholder="Phone: 080x xxx xxxx" name="phoneNo" maxlength="11" oninput="validPhone()">
               <p id="phone-status"></p>
          </div>
 
         <div class="my-2">
             <label for="E-mail">E-mail:</label>
-              <input type="text"  id="E-mail" class="form-control w-100" placeholder="E-mail" name="E-mail" oninput="validEmail()" required>
+              <input type="text"  id="E-mail" class="form-control w-100" placeholder="E-mail" name="E-mail" oninput="validEmail()">
               <p id="email-status"></p>
         </div>
        
 
         <div class="mb-3">
           <label for="password" class="form-label">Password:</label>
-          <input type="password" class="form-control w-100" id="password" placeholder="Enter password" name="password" oninput="validPassword()" required>
+          <input type="password" class="form-control w-100" id="password" placeholder="Enter password" name="password" oninput="validPassword()">
           <p id="password-status"></p>
         </div>
 
@@ -177,9 +177,9 @@
       let phone = regForm['phoneNo'].value;
       let password = regForm['password'].value;
      
-      if(name.lenght=" "){
-        document.getElementById('user').innerHTML="Name cannot be blank"
-        document.getElementById('name').style.color="red";
+      if(name.lenght==0){
+        document.getElementById('name-status').innerHTML="*Required"
+        document.getElementById('name-status').style.color="red";
         console.log(newName)
       }
       else{

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div id="demo" class="text-primary">
+
+    </div>
+
+    <script>
+        // Javascript Object Notation:JSON
+        const trial={Name:'Adio', state:'Benue',Age:45}
+        let newTrial=`{"Name":'Adio', "state":'Benue',"Age":45}`
+        console.log(newTrial)
+        const users=[{name:'Adeayo Ojo', country:'Nigeria', city:'Oshogbo', email:'ade@gmail.com'},
+        {name:'Adeayo Ojo', country:'Nigeria', city:'Ondo', email:'ade@gmail.com'},
+        {name:'Oladayo Ola', country:'Nigeria', city:'Ilorin', email:'ola@gmail.com'},
+        {name:'Ogundayo Ajayi', country:'Nigeria', city:'Kano', email:'ogun@gmail.com'},
+        {name:'Adeyeye Kemi', country:'Nigeria', city:'Katsina', email:'adekemi@gmail.com'},
+        {name:'Gbade Osho', country:'Nigeria', city:'Oshogbo', email:'gbade@gmail.com'}
+    ]
+    console.log(JSON.stringify(users));
+    // document.getElementById('demo').innerHTML=JSON.stringify(users);
+
+            // Javascript Promise: Will return 
+
+
+
+            //
+            setInterval(()=>{
+                let newDate= new  Date();
+                let year=newDate.getFullYear();
+                let month=newDate.getMonth()
+                let day=newDate.getDay();
+                let date=newDate.getDate();
+                let hours=newDate.getHours();
+                let minutes=newDate.getMinutes();
+                let seconds=newDate.getSeconds();
+                let milli=newDate.getMilliseconds();
+                const Months=['January','Febuary','March','April','May','June'];
+                const Days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+                document.getElementById('demo').innerHTML=`${year} - ${Months[month]} - ${date} ${Days[day]} - ${hours}: ${minutes}: ${seconds}:${milli}`, 1000
+            })
+            function Time(){
+                // document.getElementById('demo').innerHTML="Welcome";
+            }
+            // setTimeout()
+    </script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
